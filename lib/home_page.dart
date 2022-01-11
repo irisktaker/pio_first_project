@@ -1,7 +1,8 @@
-import 'package:first_project/simple_math_methods/simple_math_methods.dart';
+import 'package:first_project/sample_and_examples/show_hide_password/show_hide_password.dart';
 import 'package:flutter/material.dart';
 
-import 'project2/show_answer.dart';
+import 'sample_and_examples/show_answer/show_answer.dart';
+import 'sample_and_examples/simple_math_methods/simple_math_methods.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -49,11 +50,20 @@ class HomePage extends StatelessWidget {
               ),
             ),
             buildOutlinedButton(
-              text: 'Project Two',
+              text: 'Show Answer Project',
               function: () => Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => const ShowAnswer(),
+                ),
+              ),
+            ),
+            buildOutlinedButton(
+              text: 'Show Hide Password',
+              function: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ShowHidePassword(),
                 ),
               ),
             ),
